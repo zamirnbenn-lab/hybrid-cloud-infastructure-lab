@@ -2,8 +2,7 @@
 
 The Azure VNet uses the 10.20.0.0/16 address space.
 
-My pfSense homelab already uses networks in the 192.168.x.x range, so I used a different range for Azure. This avoids overlapping addresses and leaves a cleaner path for connecting the two networks later.
-
+My pfSense homelab already uses networks in the 192.168.x.x range, so I used a different range for Azure. I plan on connecting to two later in the project so using different addresses will make that easier down the line.
 The VNet is split into four subnets:
 
 - snet-web - 10.20.10.0/24
