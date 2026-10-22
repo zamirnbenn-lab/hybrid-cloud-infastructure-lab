@@ -5,10 +5,7 @@ The Azure VNet uses the 10.20.0.0/16 address space.
 My pfSense homelab already uses networks in the 192.168.x.x range, so I used a different range for Azure. I plan on connecting the two later in the project so using different addresses will make that easier down the line.
 The VNet is split into four subnets:
 
-- snet-web - 10.20.10.0/24
-- snet-app - 10.20.20.0/24
-- snet-data - 10.20.30.0/24
-- snet-management - 10.20.40.0/24
+![VNet Subnets](images/networking/vnet-subnets.png)
 
 snet-web is used for the Ubuntu VM running Nginx. 
 
