@@ -4,7 +4,7 @@ The web tier uses an Ubuntu VM running Nginx. I wanted direct experience managin
 
 The application tier uses Azure App Service instead of another VM. A second VM would have repeated a lot of the same server administration work, and I already got experience with that in my last lab. I wanted to take a different approach with this project. App Service gives me experience with a managed Azure service alongside the VMs and lets Azure handle more of the underlying platform.
 
-![App Service Overview](../images/architecture/app-service-overview.png)
+![App Service Overview](../images/architecture/app-showcase.png)
 
 The backend will run through App Service and connect to PostgreSQL over the private Azure network.
 
