@@ -10,8 +10,11 @@ The VNet is split into four subnets:
 - snet-data - 10.20.30.0/24
 - snet-management - 10.20.40.0/24
 
-Each tier has its own subnet instead of putting everything on one network. This gives me more control over which systems can communicate with each other.
+snet-web is used for the Ubuntu VM running Nginx. 
 
-snet-app is dedicated to Azure App Service VNet Integration. App Service does not attach to the network like a normal VM, so the subnet is delegated to Microsoft.Web/serverFarms. This lets the application reach private resources inside the VNet, including the PostgreSQL server.
+snet-app is dedicated to Azure App Service VNet Integration with a delegation to Microsoft.Web/serverFarms. 
+
+snet-data is used for the PostgreSQL VM so the database can stay separated from the web and application tiers.
 
 snet-management is kept separate for administrative access. I originally planned to place a management VM there, but because I use a Azure student subscription, I hit my quota. However, I still plan on utilizing this subnet and will deploy it in the future.
+
