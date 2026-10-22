@@ -9,3 +9,5 @@ The application tier uses Azure App Service instead of another VM. A second VM w
 The backend will run through App Service and connect to PostgreSQL over the private Azure network.
 
 PostgreSQL runs on an Ubuntu VM. I originally looked at Azure Database for PostgreSQL, but my Azure student subscription would not allow me to deploy it in the same region as the rest of the environment. Most of the available regions were outside the US and rather than split the environment across unrelated regions, I decided to run PostgreSQL on a VM and keep everything in the same VNet. 
+
+I also chose Python for the backend because I already have experience with Java and wanted to get more comfortable with a language that is commonly used for backend development, automation, and cloud work.
