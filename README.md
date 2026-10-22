@@ -11,4 +11,4 @@ Azure uses the 10.20.0.0/16 network while my existing pfSense homelab uses 192.1
 - [Architecture](docs/architecture.md)
 - [Networking](docs/networking.md)
 - [Service Choices](docs/service-choices.md)
-- [Network Security](docs/security.md)
+- [Network Security](docs/network-security.md)
